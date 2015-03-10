@@ -37,10 +37,10 @@ public:
 	}
 
 	//	Overloaded constructor
-	Books(string sID, string sName, string sWriter, string sPub, string sDate, int units, double dWholeSale, double dRetail)
+	Books(string sID, string sName, string sWriter, string sPub, string sDate, int units, double dWholeS, double dRet)
 	{
 		cout << "Constructor running" << endl;
-		set(sID, sName, sWriter, sPub, sDate, units, dWholeSale, dRetail);
+		set(sID, sName, sWriter, sPub, sDate, units, dWholeS, dRet);
 	}
 	
 	/*Books(Books &obj)

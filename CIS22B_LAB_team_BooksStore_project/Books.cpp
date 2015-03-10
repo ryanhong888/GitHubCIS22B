@@ -44,17 +44,17 @@ void Books::setBookunits(int units)
 {
 	iUnits = units;
 }
-void Books::setWholesale(double dWholeSale)
+void Books::setWholesale(double dWholeS)
 {
-	dWholesale = dWholeSale;
+	dWholesale = dWholeS;
 }
-void Books::setRetail(double dRetail)
+void Books::setRetail(double dRet)
 {
-	dRetail = dRetail;
+	dRetail = dRet;
 }
 
 //	Overload member function
-void Books::set(string sID, string sName, string sWriter, string sPub, string sDate, int units, double dWholeSale, double dRetail)
+void Books::set(string sID, string sName, string sWriter, string sPub, string sDate, int units, double dWholeS, double dRet)
 {
 	sIsbn = sID;
 	sTitle = sName;
@@ -62,11 +62,11 @@ void Books::set(string sID, string sName, string sWriter, string sPub, string sD
 	sEntryDate = sDate;
 	sPublisher = sPub;
 	iUnits = units;
-	dWholesale = dWholeSale;
-	dRetail = dRetail;
+	dWholesale = dWholeS;
+	dRetail = dRet;
 }
 //	Overload member function
-void Books::set(string sID, string sName, string sWriter, string sPub, string sDate, string units, string dWholeSale, string dRetail)
+void Books::set(string sID, string sName, string sWriter, string sPub, string sDate, string units, string dWholeS, string dRet)
 {
 	sIsbn = sID;
 	sTitle = sName;
@@ -74,8 +74,8 @@ void Books::set(string sID, string sName, string sWriter, string sPub, string sD
 	sEntryDate = sDate;
 	sPublisher = sPub;
 	iUnits = static_cast<int>(atof(units.c_str()));
-	dWholesale = atof(dWholeSale.c_str());
-	dRetail = atof(dRetail.c_str());
+	dWholesale = atof(dWholeS.c_str());
+	dRetail = atof(dRet.c_str());
 }
 
 //	Accessor member functions
